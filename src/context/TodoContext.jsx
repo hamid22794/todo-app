@@ -1,4 +1,3 @@
-// src/context/TodoContext.jsx
 import { createContext, useContext, useEffect, useState } from "react";
 
 export const TodoContext = createContext();

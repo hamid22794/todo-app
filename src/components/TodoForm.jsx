@@ -20,7 +20,10 @@ const TodoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center gap-2 mb-4">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col items-center gap-2 mb-4"
+    >
       <div className="flex w-full max-w-md">
         <input
           type="text"

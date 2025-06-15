@@ -1,4 +1,3 @@
-// src/components/TodoItem.jsx
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { useState } from "react";
 import { useTodo } from "../context/TodoContext";
@@ -39,10 +38,16 @@ const TodoItem = ({ todo }) => {
         )}
       </div>
       <div className="flex gap-2">
-        <button onClick={() => setIsEditing(!isEditing)} className="text-blue-500 hover:text-blue-700">
+        <button
+          onClick={() => setIsEditing(!isEditing)}
+          className="text-blue-500 hover:text-blue-700"
+        >
           <FaEdit />
         </button>
-        <button onClick={() => deleteTodo(todo.id)} className="text-red-500 hover:text-red-700">
+        <button
+          onClick={() => deleteTodo(todo.id)}
+          className="text-red-500 hover:text-red-700"
+        >
           <FaTrash />
         </button>
       </div>
